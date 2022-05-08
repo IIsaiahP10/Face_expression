@@ -4,7 +4,7 @@ from fer import FER
 import matplotlib.pyplot as plt 
 import cv2
 
-test_image_one = cv2.imread("elon2.png")
+test_image_one = cv2.imread('elon2.jpg')
 emo_detector = FER(mtcnn=True)
 # Capture all the emotions on the image
 captured_emotions = emo_detector.detect_emotions(test_image_one)
