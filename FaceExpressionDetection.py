@@ -25,9 +25,9 @@ for file in files:
     # To see the images being analyzed for their emotion and score, uncomment the lines below
     #cv2.imshow(str(file), fileImages)
     #cv2.waitKey()
-    #print(dominant_Emotion, emotion_Score)
+    print(dominant_Emotion, emotion_Score)
 print('made it outside the loop')
-x = np.linspace(1,14,13)
+x = np.linspace(1,18,17)
 y = emotion_Score_List# time passed between the time each frame was taken
 
 plt.plot(x,y, label = 'Teachers Emotions Over Time')
